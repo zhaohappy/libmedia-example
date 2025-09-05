@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "author": "zhaogaoxing <zhaogaoxing@baijiashilian.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "umi": "^4.4.12",
+    "@libmedia/avformat": "0.10.0",
+    "@libmedia/avutil": "0.10.0",
+    "@libmedia/avcodec": "0.10.0",
+    "@libmedia/common": "1.5.1",
+    "@libmedia/cheap": "0.10.0",
+    "@libmedia/avnetwork": "0.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.8.3",
+    "ts-loader": "^9.4.4"
+  }
+}

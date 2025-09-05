@@ -1,0 +1,6 @@
+{
+  "extends": "./src/.umi/tsconfig.json",
+  "files": [
+    "node_modules/@libmedia/cheap/dist/esm/cheapdef.d.ts"
+  ]
+}
