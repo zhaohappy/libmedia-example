@@ -1,0 +1,21 @@
+
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "outDir": "./dist",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "declaration": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "types": [
+      "node"
+    ]
+  },
+  "include": ["src"],
+  "files": [
+    "node_modules/@libmedia/cheap/dist/cjs/cheapdef.d.ts"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "paths": {
+      "@libmedia/common/*": ["node_modules/@libmedia/common/dist/cjs/*"],
+      "@libmedia/cheap/*": ["node_modules/@libmedia/cheap/dist/cjs/*"],
+      "@libmedia/avcodec/*": ["node_modules/@libmedia/avcodec/dist/cjs/*"],
+      "@libmedia/avformat/*": ["node_modules/@libmedia/avformat/dist/cjs/*"],
+      "@libmedia/avnetwork/*": ["node_modules/@libmedia/avnetwork/dist/cjs/*"],
+      "@libmedia/avplayer/*": ["node_modules/@libmedia/avplayer/dist/cjs/*"],
+      "@libmedia/avprotocol/*": ["node_modules/@libmedia/avprotocol/dist/cjs/*"],
+      "@libmedia/avrender/*": ["node_modules/@libmedia/avrender/dist/cjs/*"],
+      "@libmedia/audiostretchpitch/*": ["node_modules/@libmedia/audiostretchpitch/dist/cjs/*"],
+      "@libmedia/audioresample/*": ["node_modules/@libmedia/audioresample/dist/cjs/*"],
+      "@libmedia/avpipeline/*": ["node_modules/@libmedia/avpipeline/dist/cjs/*"],
+      "@libmedia/avtranscode/*": ["node_modules/@libmedia/avtranscode/dist/cjs/*"],
+      "@libmedia/avutil/*": ["node_modules/@libmedia/avutil/dist/cjs/*"],
+      "@libmedia/videoscale/*": ["node_modules/@libmedia/videoscale/dist/cjs/*"],
+      "@libmedia/avfilter/*": ["node_modules/@libmedia/avfilter/dist/cjs/*"]
+    }
+  }
+}
