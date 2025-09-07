@@ -1,0 +1,45 @@
+{
+  "name": "vite-vue",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@libmedia/avcodec": "0.10.0",
+    "@libmedia/avformat": "0.10.0",
+    "@libmedia/avnetwork": "0.10.0",
+    "@libmedia/avutil": "0.10.0",
+    "@libmedia/cheap": "0.10.0",
+    "@libmedia/common": "1.5.1",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@libmedia/rollup-plugin-typescript": "^12.1.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^22.16.5",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vitejs/plugin-vue-jsx": "^5.0.1",
+    "@vue/eslint-config-typescript": "^14.6.0",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-vue": "~10.3.0",
+    "jiti": "^2.4.2",
+    "npm-run-all2": "^8.0.4",
+    "tslib": "^2.8.1",
+    "typescript": "~5.8.0",
+    "vite": "npm:rolldown-vite@latest",
+    "vite-plugin-vue-devtools": "^8.0.0",
+    "vue-tsc": "^3.0.4"
+  }
+}

@@ -3,6 +3,7 @@
 - webpack
 - rollup
 - vite
+- vite + vue
 - rspack
 - rsbuild
 - umi
