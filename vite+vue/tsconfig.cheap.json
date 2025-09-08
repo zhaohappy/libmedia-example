@@ -2,6 +2,7 @@
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
     "noEmit": false,
+    "allowImportingTsExtensions": false,
     "paths": {
       "@libmedia/common/*": ["./node_modules/@libmedia/common/dist/esm/*"],
       "@libmedia/cheap/*": ["./node_modules/@libmedia/cheap/dist/esm/*"],

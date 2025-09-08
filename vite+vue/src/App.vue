@@ -5,13 +5,14 @@ import { ref } from 'vue'
 import * as demux from '@libmedia/avformat/demux'
 import { createAVIFormatContext } from '@libmedia/avformat/AVFormatContext'
 import { createAVPacket, destroyAVPacket } from '@libmedia/avutil/util/avpacket'
-import { AVMediaType } from '@libmedia/avutil/codec'
+import { AVCodecID, AVMediaType } from '@libmedia/avutil/codec'
 import compileResource from '@libmedia/avutil/function/compileResource'
 import WasmVideoDecoder from '@libmedia/avcodec/wasmcodec/VideoDecoder'
 import Sleep from '@libmedia/common/timer/Sleep'
 import { destroyAVFrame } from '@libmedia/avutil/util/avframe'
 
 import { getIOReader, getAVFormat, getWasm, getAccept } from './libmedia/utils'
+import AVCodecParameters from '@libmedia/avutil/struct/avcodecparameters'
 
 let stop_ = true
 
@@ -35,6 +36,7 @@ async function decode(log: (v: string) => void,  file: File) {
   iformatContext.iformat = iformat
 
   const avpacket = createAVPacket()
+  const codecpar = make<AVCodecParameters>()
 
   await demux.open(iformatContext)
   await demux.analyzeStreams(iformatContext) 
@@ -81,6 +83,7 @@ async function decode(log: (v: string) => void,  file: File) {
   decoder.close()
   iformatContext.destroy()
   destroyAVPacket(avpacket)
+  unmake(codecpar)
   stop_ = true
   log('decode end\n')
 }
@@ -99,6 +102,35 @@ function onStop() {
 
 function onChange(event: any) {
   file = event.target.files[0]
+}
+
+</script>
+
+<script lang="ts">
+
+export default {
+  // data: function () {
+  //   return {
+  //     text: ''
+  //   }
+  // },
+  mounted() {
+    console.log('mounted  ')
+  },
+  methods: {
+    // onStop() {
+    //   console.log('mounted  ')
+    // },
+    // onChange(event: any) {
+    //   console.log('mounted  ')
+    // },
+    // getAccept() {
+    //   return ''
+    // },
+    // onDecode() {
+
+    // }
+  }
 }
 
 </script>
