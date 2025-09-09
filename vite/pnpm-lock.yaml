@@ -9,23 +9,23 @@ importers:
   .:
     dependencies:
       '@libmedia/avcodec':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/avformat':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/avnetwork':
         specifier: 0.9.0
         version: 0.9.0
       '@libmedia/avutil':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/cheap':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/common':
-        specifier: 1.5.0
-        version: 1.5.0
+        specifier: 1.5.1
+        version: 1.5.1
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -33,9 +33,9 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@rollup/plugin-typescript':
-        specifier: ^12.1.1
-        version: 12.1.4(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)
+      '@libmedia/rollup-plugin-typescript':
+        specifier: ^12.2.1
+        version: 12.2.1(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)
       '@types/node':
         specifier: ^22.7.6
         version: 22.18.0
@@ -330,8 +330,14 @@ packages:
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
+  '@libmedia/avcodec@0.10.0':
+    resolution: {integrity: sha512-ewhTwZGyV+341HzTxfZoYnp7DnR+cx7mSypGB1h4ynHw3qoz4877JQh2OwY8ZnfmeRs+tnXWrLppR99vzHrsyQ==}
+
   '@libmedia/avcodec@0.9.0':
     resolution: {integrity: sha512-66d+4I/eRjna86DQvALUvHjdKHCM9KroZSUvL0B/CQRme08NPWxx0M8/uGZjjZ3IqYoGnbJeW/9I2fprGuYdHQ==}
+
+  '@libmedia/avformat@0.10.0':
+    resolution: {integrity: sha512-9ep+bAjEEQae7A2+ccJVN4b4xhS6cySqd5A3Fr4MXQCxthN1JemkCaLL0GSIZ8WRaSYjNH92E9QEs59W340i6g==}
 
   '@libmedia/avformat@0.9.0':
     resolution: {integrity: sha512-pk3yElymsJHJeNrR4ZzLTHqoI66F0zhhoPJfV+4e51MrN5wZYdPh7zuysWd+pCk2DeuSLv52A+053vOpi+YNXQ==}
@@ -339,17 +345,42 @@ packages:
   '@libmedia/avnetwork@0.9.0':
     resolution: {integrity: sha512-SRINr7cgBnjffxfNJp5mI+VC54epqeYrluwSr/whFPjAV5q0uJTIS/QDGS7D/DQhbykI3brERE++OFFYEybWbw==}
 
+  '@libmedia/avprotocol@0.10.0':
+    resolution: {integrity: sha512-3clwPXcAEMkBU615uqTVlXk1lBjfOYDf/SGB9fLMho9t70Psu6uP/l26wm7BQ6vJ7M1MoKZozI4LksRaG4VdpQ==}
+
   '@libmedia/avprotocol@0.9.0':
     resolution: {integrity: sha512-jaW9BK7oxfXF7wITrNWN49TrTqgyHxr62+f1rSfnFk1/C1BeiLXrr9p8/JApf6Tn4f2NBH+yIoFbv5wSIw1JYA==}
 
+  '@libmedia/avutil@0.10.0':
+    resolution: {integrity: sha512-BB1cl5gBY5cKJaVcrFoE+wuMObQk/orCXS0djvWuXfXXYwlFsfaO5jWZHTTCb41qkKBY+6o1nGtra9aq75YMrQ==}
+
   '@libmedia/avutil@0.9.0':
     resolution: {integrity: sha512-KPjoymEl/jUJVpddDsGzKWROW19SX5ZWjQqkJbYBRaXt2AUE/nMLo1KNf6bSf9Lfh4rcyWeVdhAO2bUxgLGfag==}
+
+  '@libmedia/cheap@0.10.0':
+    resolution: {integrity: sha512-H2cSIjIEKuSHYr9YvZzm+2wuDFpLBMe5DE9oDAjo/YgUIzEuQfyItfT6fQHgMUpcyYk+Yr60EvRP4UP67T3XDQ==}
 
   '@libmedia/cheap@0.9.0':
     resolution: {integrity: sha512-ykUmJ8K1eZVYnRbjP1xUfdmPA3PGHsCPxWPxr7ummQd6MDXDCLEtXmtoQs3uEvxFZzXTnaeZqtvmwHH+t2v81A==}
 
   '@libmedia/common@1.5.0':
     resolution: {integrity: sha512-CSQZ2rlm8t8u4DcmU2sjw/DeREpNtj1ShnupUVNKbxT5qaVTB/Hpsu0P/4zRpZUVUY2dtDWmMooH4w1w6hf8aQ==}
+
+  '@libmedia/common@1.5.1':
+    resolution: {integrity: sha512-Ui8rcUE+5+SE0atBnE2LJ8PyW8hWAT8THjkI2KsxCb8md2oKxjsQpztQpNCkwpM1dsOesL2Aex8MFRRX6Ncocg==}
+
+  '@libmedia/rollup-plugin-typescript@12.2.1':
+    resolution: {integrity: sha512-inkVwcnGh9xPkwwKiHt6HVhFGhG1BpGdgkF2mi7aaUEaYyA2EX3pPHdfM6MELof23nfRDZU5npL9sl7q5SdNcA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.14.0||^3.0.0||^4.0.0
+      tslib: '*'
+      typescript: '>=3.7.0'
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      tslib:
+        optional: true
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -369,19 +400,6 @@ packages:
 
   '@rolldown/pluginutils@1.0.0-beta.27':
     resolution: {integrity: sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==}
-
-  '@rollup/plugin-typescript@12.1.4':
-    resolution: {integrity: sha512-s5Hx+EtN60LMlDBvl5f04bEiFZmAepk27Q+mr85L/00zPDn1jtzlTV6FWn81MaIwqfWzKxmOJrBWHU6vtQyedQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^2.14.0||^3.0.0||^4.0.0
-      tslib: '*'
-      typescript: '>=3.7.0'
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-      tslib:
-        optional: true
 
   '@rollup/pluginutils@5.2.0':
     resolution: {integrity: sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw==}
@@ -532,6 +550,21 @@ packages:
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
 
+  '@vue/compiler-core@3.5.21':
+    resolution: {integrity: sha512-8i+LZ0vf6ZgII5Z9XmUvrCyEzocvWT+TeR2VBUVlzIH6Tyv57E20mPZ1bCS+tbejgUgmjrEh7q/0F0bibskAmw==}
+
+  '@vue/compiler-dom@3.5.21':
+    resolution: {integrity: sha512-jNtbu/u97wiyEBJlJ9kmdw7tAr5Vy0Aj5CgQmo+6pxWNQhXZDPsRr1UWPN4v3Zf82s2H3kF51IbzZ4jMWAgPlQ==}
+
+  '@vue/compiler-sfc@3.5.21':
+    resolution: {integrity: sha512-SXlyk6I5eUGBd2v8Ie7tF6ADHE9kCR6mBEuPyH1nUZ0h6Xx6nZI29i12sJKQmzbDyr2tUHMhhTt51Z6blbkTTQ==}
+
+  '@vue/compiler-ssr@3.5.21':
+    resolution: {integrity: sha512-vKQ5olH5edFZdf5ZrlEgSO1j1DMA4u23TVK5XR1uMhvwnYvVdDF0nHXJUblL/GvzlShQbjhZZ2uvYmDlAbgo9w==}
+
+  '@vue/shared@3.5.21':
+    resolution: {integrity: sha512-+2k1EQpnYuVuu3N7atWyG3/xoFWIVJZq4Mz8XNOdScFI0etES75fbny/oU4lKWk/577P1zmg0ioYvpGEDZ3DLw==}
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -640,6 +673,10 @@ packages:
 
   emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
+
+  entities@4.5.0:
+    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
+    engines: {node: '>=0.12'}
 
   esbuild@0.25.9:
     resolution: {integrity: sha512-CRbODhYyQx3qp7ZEwzxOk4JBqmD/seJrzPa/cGjY1VtIn5E09Oi9/dB4JwctnfZ8Q8iT7rioVv5k/FNT/uf54g==}
@@ -768,6 +805,9 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
+
+  magic-string@0.30.19:
+    resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -947,6 +987,10 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
+
+  source-map@0.7.6:
+    resolution: {integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==}
+    engines: {node: '>= 12'}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -1299,12 +1343,27 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  '@libmedia/avcodec@0.10.0':
+    dependencies:
+      '@libmedia/avformat': 0.10.0
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
+
   '@libmedia/avcodec@0.9.0':
     dependencies:
       '@libmedia/avformat': 0.9.0
       '@libmedia/avutil': 0.9.0
       '@libmedia/cheap': 0.9.0
       '@libmedia/common': 1.5.0
+
+  '@libmedia/avformat@0.10.0':
+    dependencies:
+      '@libmedia/avcodec': 0.10.0
+      '@libmedia/avprotocol': 0.10.0
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
 
   '@libmedia/avformat@0.9.0':
     dependencies:
@@ -1322,22 +1381,52 @@ snapshots:
       '@libmedia/cheap': 0.9.0
       '@libmedia/common': 1.5.0
 
+  '@libmedia/avprotocol@0.10.0':
+    dependencies:
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
+
   '@libmedia/avprotocol@0.9.0':
     dependencies:
       '@libmedia/avutil': 0.9.0
       '@libmedia/cheap': 0.9.0
       '@libmedia/common': 1.5.0
 
+  '@libmedia/avutil@0.10.0':
+    dependencies:
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
+
   '@libmedia/avutil@0.9.0':
     dependencies:
       '@libmedia/cheap': 0.9.0
       '@libmedia/common': 1.5.0
+
+  '@libmedia/cheap@0.10.0':
+    dependencies:
+      '@libmedia/common': 1.5.1
 
   '@libmedia/cheap@0.9.0':
     dependencies:
       '@libmedia/common': 1.5.0
 
   '@libmedia/common@1.5.0': {}
+
+  '@libmedia/common@1.5.1': {}
+
+  '@libmedia/rollup-plugin-typescript@12.2.1(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)':
+    dependencies:
+      '@libmedia/cheap': 0.10.0
+      '@rollup/pluginutils': 5.2.0(rollup@4.50.0)
+      '@vue/compiler-sfc': 3.5.21
+      fast-glob: 3.3.3
+      resolve: 1.22.10
+      source-map: 0.7.6
+      typescript: 5.9.2
+    optionalDependencies:
+      rollup: 4.50.0
+      tslib: 2.8.1
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1355,15 +1444,6 @@ snapshots:
     optional: true
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
-
-  '@rollup/plugin-typescript@12.1.4(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)':
-    dependencies:
-      '@rollup/pluginutils': 5.2.0(rollup@4.50.0)
-      resolve: 1.22.10
-      typescript: 5.9.2
-    optionalDependencies:
-      rollup: 4.50.0
-      tslib: 2.8.1
 
   '@rollup/pluginutils@5.2.0(rollup@4.50.0)':
     dependencies:
@@ -1486,6 +1566,38 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@vue/compiler-core@3.5.21':
+    dependencies:
+      '@babel/parser': 7.28.3
+      '@vue/shared': 3.5.21
+      entities: 4.5.0
+      estree-walker: 2.0.2
+      source-map-js: 1.2.1
+
+  '@vue/compiler-dom@3.5.21':
+    dependencies:
+      '@vue/compiler-core': 3.5.21
+      '@vue/shared': 3.5.21
+
+  '@vue/compiler-sfc@3.5.21':
+    dependencies:
+      '@babel/parser': 7.28.3
+      '@vue/compiler-core': 3.5.21
+      '@vue/compiler-dom': 3.5.21
+      '@vue/compiler-ssr': 3.5.21
+      '@vue/shared': 3.5.21
+      estree-walker: 2.0.2
+      magic-string: 0.30.19
+      postcss: 8.5.6
+      source-map-js: 1.2.1
+
+  '@vue/compiler-ssr@3.5.21':
+    dependencies:
+      '@vue/compiler-dom': 3.5.21
+      '@vue/shared': 3.5.21
+
+  '@vue/shared@3.5.21': {}
+
   ansi-regex@5.0.1: {}
 
   ansi-regex@6.2.0: {}
@@ -1575,6 +1687,8 @@ snapshots:
   emoji-regex@8.0.0: {}
 
   emoji-regex@9.2.2: {}
+
+  entities@4.5.0: {}
 
   esbuild@0.25.9:
     optionalDependencies:
@@ -1709,6 +1823,10 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  magic-string@0.30.19:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
 
   merge2@1.4.1: {}
 
@@ -1875,6 +1993,8 @@ snapshots:
   signal-exit@4.1.0: {}
 
   source-map-js@1.2.1: {}
+
+  source-map@0.7.6: {}
 
   string-width@4.2.3:
     dependencies:

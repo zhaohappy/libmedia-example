@@ -9,12 +9,12 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@libmedia/avcodec": "0.9.0",
-    "@libmedia/avformat": "0.9.0",
-    "@libmedia/avnetwork": "0.9.0",
-    "@libmedia/avutil": "0.9.0",
-    "@libmedia/cheap": "0.9.0",
-    "@libmedia/common": "1.5.0"
+    "@libmedia/avcodec": "0.10.0",
+    "@libmedia/avformat": "0.10.0",
+    "@libmedia/avnetwork": "0.10.0",
+    "@libmedia/avutil": "0.10.0",
+    "@libmedia/cheap": "0.10.0",
+    "@libmedia/common": "1.5.1"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.5.2",

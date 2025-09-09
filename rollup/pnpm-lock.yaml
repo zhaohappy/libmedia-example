@@ -9,23 +9,23 @@ importers:
   .:
     dependencies:
       '@libmedia/avcodec':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/avformat':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/avnetwork':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/avutil':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/cheap':
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@libmedia/common':
-        specifier: 1.5.0
-        version: 1.5.0
+        specifier: 1.5.1
+        version: 1.5.1
     devDependencies:
       '@babel/core':
         specifier: ^7.28.3
@@ -760,26 +760,26 @@ packages:
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
-  '@libmedia/avcodec@0.9.0':
-    resolution: {integrity: sha512-66d+4I/eRjna86DQvALUvHjdKHCM9KroZSUvL0B/CQRme08NPWxx0M8/uGZjjZ3IqYoGnbJeW/9I2fprGuYdHQ==}
+  '@libmedia/avcodec@0.10.0':
+    resolution: {integrity: sha512-ewhTwZGyV+341HzTxfZoYnp7DnR+cx7mSypGB1h4ynHw3qoz4877JQh2OwY8ZnfmeRs+tnXWrLppR99vzHrsyQ==}
 
-  '@libmedia/avformat@0.9.0':
-    resolution: {integrity: sha512-pk3yElymsJHJeNrR4ZzLTHqoI66F0zhhoPJfV+4e51MrN5wZYdPh7zuysWd+pCk2DeuSLv52A+053vOpi+YNXQ==}
+  '@libmedia/avformat@0.10.0':
+    resolution: {integrity: sha512-9ep+bAjEEQae7A2+ccJVN4b4xhS6cySqd5A3Fr4MXQCxthN1JemkCaLL0GSIZ8WRaSYjNH92E9QEs59W340i6g==}
 
-  '@libmedia/avnetwork@0.9.0':
-    resolution: {integrity: sha512-SRINr7cgBnjffxfNJp5mI+VC54epqeYrluwSr/whFPjAV5q0uJTIS/QDGS7D/DQhbykI3brERE++OFFYEybWbw==}
+  '@libmedia/avnetwork@0.10.0':
+    resolution: {integrity: sha512-IdvFcyZJwOT4bBB+23FUsE8rvb6eEcF9DYxO3gYOk/mprfVL8jGor1YN7EQzuXqRh7cd0urmE9utfR+RCtDMnw==}
 
-  '@libmedia/avprotocol@0.9.0':
-    resolution: {integrity: sha512-jaW9BK7oxfXF7wITrNWN49TrTqgyHxr62+f1rSfnFk1/C1BeiLXrr9p8/JApf6Tn4f2NBH+yIoFbv5wSIw1JYA==}
+  '@libmedia/avprotocol@0.10.0':
+    resolution: {integrity: sha512-3clwPXcAEMkBU615uqTVlXk1lBjfOYDf/SGB9fLMho9t70Psu6uP/l26wm7BQ6vJ7M1MoKZozI4LksRaG4VdpQ==}
 
-  '@libmedia/avutil@0.9.0':
-    resolution: {integrity: sha512-KPjoymEl/jUJVpddDsGzKWROW19SX5ZWjQqkJbYBRaXt2AUE/nMLo1KNf6bSf9Lfh4rcyWeVdhAO2bUxgLGfag==}
+  '@libmedia/avutil@0.10.0':
+    resolution: {integrity: sha512-BB1cl5gBY5cKJaVcrFoE+wuMObQk/orCXS0djvWuXfXXYwlFsfaO5jWZHTTCb41qkKBY+6o1nGtra9aq75YMrQ==}
 
-  '@libmedia/cheap@0.9.0':
-    resolution: {integrity: sha512-ykUmJ8K1eZVYnRbjP1xUfdmPA3PGHsCPxWPxr7ummQd6MDXDCLEtXmtoQs3uEvxFZzXTnaeZqtvmwHH+t2v81A==}
+  '@libmedia/cheap@0.10.0':
+    resolution: {integrity: sha512-H2cSIjIEKuSHYr9YvZzm+2wuDFpLBMe5DE9oDAjo/YgUIzEuQfyItfT6fQHgMUpcyYk+Yr60EvRP4UP67T3XDQ==}
 
-  '@libmedia/common@1.5.0':
-    resolution: {integrity: sha512-CSQZ2rlm8t8u4DcmU2sjw/DeREpNtj1ShnupUVNKbxT5qaVTB/Hpsu0P/4zRpZUVUY2dtDWmMooH4w1w6hf8aQ==}
+  '@libmedia/common@1.5.1':
+    resolution: {integrity: sha512-Ui8rcUE+5+SE0atBnE2LJ8PyW8hWAT8THjkI2KsxCb8md2oKxjsQpztQpNCkwpM1dsOesL2Aex8MFRRX6Ncocg==}
 
   '@rollup/plugin-node-resolve@16.0.1':
     resolution: {integrity: sha512-tk5YCxJWIG81umIvNkSod2qK5KyQW19qcBF/B78n1bjtOON6gzKoVeSzAE8yHCZEDmqkHKkxplExA8KzdJLJpA==}
@@ -2259,45 +2259,45 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@libmedia/avcodec@0.9.0':
+  '@libmedia/avcodec@0.10.0':
     dependencies:
-      '@libmedia/avformat': 0.9.0
-      '@libmedia/avutil': 0.9.0
-      '@libmedia/cheap': 0.9.0
-      '@libmedia/common': 1.5.0
+      '@libmedia/avformat': 0.10.0
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
 
-  '@libmedia/avformat@0.9.0':
+  '@libmedia/avformat@0.10.0':
     dependencies:
-      '@libmedia/avcodec': 0.9.0
-      '@libmedia/avprotocol': 0.9.0
-      '@libmedia/avutil': 0.9.0
-      '@libmedia/cheap': 0.9.0
-      '@libmedia/common': 1.5.0
+      '@libmedia/avcodec': 0.10.0
+      '@libmedia/avprotocol': 0.10.0
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
 
-  '@libmedia/avnetwork@0.9.0':
+  '@libmedia/avnetwork@0.10.0':
     dependencies:
-      '@libmedia/avformat': 0.9.0
-      '@libmedia/avprotocol': 0.9.0
-      '@libmedia/avutil': 0.9.0
-      '@libmedia/cheap': 0.9.0
-      '@libmedia/common': 1.5.0
+      '@libmedia/avformat': 0.10.0
+      '@libmedia/avprotocol': 0.10.0
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
 
-  '@libmedia/avprotocol@0.9.0':
+  '@libmedia/avprotocol@0.10.0':
     dependencies:
-      '@libmedia/avutil': 0.9.0
-      '@libmedia/cheap': 0.9.0
-      '@libmedia/common': 1.5.0
+      '@libmedia/avutil': 0.10.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
 
-  '@libmedia/avutil@0.9.0':
+  '@libmedia/avutil@0.10.0':
     dependencies:
-      '@libmedia/cheap': 0.9.0
-      '@libmedia/common': 1.5.0
+      '@libmedia/cheap': 0.10.0
+      '@libmedia/common': 1.5.1
 
-  '@libmedia/cheap@0.9.0':
+  '@libmedia/cheap@0.10.0':
     dependencies:
-      '@libmedia/common': 1.5.0
+      '@libmedia/common': 1.5.1
 
-  '@libmedia/common@1.5.0': {}
+  '@libmedia/common@1.5.1': {}
 
   '@rollup/plugin-node-resolve@16.0.1(rollup@4.50.0)':
     dependencies:
