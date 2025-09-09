@@ -6,5 +6,6 @@
 - vite + vue
 - rspack
 - rsbuild
+- esbuild
 - umi
 - node
