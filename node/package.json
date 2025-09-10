@@ -10,7 +10,8 @@
     "@libmedia/avnetwork": "0.10.0",
     "@libmedia/avutil": "0.10.0",
     "@libmedia/cheap": "0.10.0",
-    "@libmedia/common": "1.5.1"
+    "@libmedia/common": "1.5.1",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@types/node": "^22.7.6",

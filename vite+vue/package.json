@@ -24,7 +24,7 @@
     "vue": "^3.5.18"
   },
   "devDependencies": {
-    "@libmedia/rollup-plugin-typescript": "^12.2.1",
+    "@libmedia/rollup-plugin-typescript": "^12.2.2",
     "@rollup/plugin-typescript": "^12.1.4",
     "@tsconfig/node22": "^22.0.2",
     "@types/node": "^22.16.5",

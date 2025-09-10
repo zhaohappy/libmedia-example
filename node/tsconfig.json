@@ -9,6 +9,7 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "importHelpers": true,
     "baseUrl": "./",
     "types": [
       "node"
