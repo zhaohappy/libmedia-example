@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "umi": "^4.4.12",
-    "@libmedia/avformat": "0.10.0",
-    "@libmedia/avutil": "0.10.0",
-    "@libmedia/avcodec": "0.10.0",
-    "@libmedia/common": "1.5.1",
-    "@libmedia/cheap": "0.10.0",
-    "@libmedia/avnetwork": "0.10.0"
+    "@libmedia/avcodec": "0.11.0",
+    "@libmedia/avformat": "0.11.0",
+    "@libmedia/avnetwork": "0.11.0",
+    "@libmedia/avutil": "0.11.0",
+    "@libmedia/cheap": "~0.11.0",
+    "@libmedia/common": "~1.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",

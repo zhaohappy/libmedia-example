@@ -9,23 +9,23 @@ importers:
   .:
     dependencies:
       '@libmedia/avcodec':
-        specifier: 0.10.0
-        version: 0.10.0
+        specifier: 0.11.0
+        version: 0.11.0
       '@libmedia/avformat':
-        specifier: 0.10.0
-        version: 0.10.0
+        specifier: 0.11.0
+        version: 0.11.0
       '@libmedia/avnetwork':
-        specifier: 0.10.0
-        version: 0.10.0
+        specifier: 0.11.0
+        version: 0.11.0
       '@libmedia/avutil':
-        specifier: 0.10.0
-        version: 0.10.0
+        specifier: 0.11.0
+        version: 0.11.0
       '@libmedia/cheap':
-        specifier: 0.10.0
-        version: 0.10.0
+        specifier: ~0.11.0
+        version: 0.11.0
       '@libmedia/common':
-        specifier: 1.5.1
-        version: 1.5.1
+        specifier: ~1.5.2
+        version: 1.5.2
       vue:
         specifier: ^3.5.18
         version: 3.5.21(typescript@5.9.2)
@@ -45,9 +45,6 @@ importers:
       babel-loader:
         specifier: ^10.0.0
         version: 10.0.0(@babel/core@7.28.3)(webpack@5.101.3)
-      fast-glob:
-        specifier: ^3.3.3
-        version: 3.3.3
       swc-loader:
         specifier: ^0.2.6
         version: 0.2.6(@swc/core@1.13.5)(webpack@5.101.3)
@@ -608,38 +605,26 @@ packages:
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
-  '@libmedia/avcodec@0.10.0':
-    resolution: {integrity: sha512-ewhTwZGyV+341HzTxfZoYnp7DnR+cx7mSypGB1h4ynHw3qoz4877JQh2OwY8ZnfmeRs+tnXWrLppR99vzHrsyQ==}
+  '@libmedia/avcodec@0.11.0':
+    resolution: {integrity: sha512-/fF+jHRbqIEq2PZ7wJpvXCmKhrXzv1s7t11IjNhYeJVvy6vmKbFEV2grSt/sVf4UnsAIF3rb0quEI/7L5HbNXg==}
 
-  '@libmedia/avformat@0.10.0':
-    resolution: {integrity: sha512-9ep+bAjEEQae7A2+ccJVN4b4xhS6cySqd5A3Fr4MXQCxthN1JemkCaLL0GSIZ8WRaSYjNH92E9QEs59W340i6g==}
+  '@libmedia/avformat@0.11.0':
+    resolution: {integrity: sha512-vKWdwS3KrOVGQkVv3xnzvo8lhbJ3Fjyn8hjHQ2S0uXIAGiU7M1fQOALFi7wObMxddVACIDa/PlStyhIhUCl10Q==}
 
-  '@libmedia/avnetwork@0.10.0':
-    resolution: {integrity: sha512-IdvFcyZJwOT4bBB+23FUsE8rvb6eEcF9DYxO3gYOk/mprfVL8jGor1YN7EQzuXqRh7cd0urmE9utfR+RCtDMnw==}
+  '@libmedia/avnetwork@0.11.0':
+    resolution: {integrity: sha512-Bu3eiVTFzRAP55MD7XLWFhv/O2gFQ/jv48usDn6U4ihqfypUuT+fNaQZsrPYevpgHkat+HJXRSc6lswsNUQq3A==}
 
-  '@libmedia/avprotocol@0.10.0':
-    resolution: {integrity: sha512-3clwPXcAEMkBU615uqTVlXk1lBjfOYDf/SGB9fLMho9t70Psu6uP/l26wm7BQ6vJ7M1MoKZozI4LksRaG4VdpQ==}
+  '@libmedia/avprotocol@0.11.0':
+    resolution: {integrity: sha512-bf6cHMT572xVA9uZ+rww/TtyK/4NlV6FBIZDXpexW/6WJkzTwY83oo6zY/PK6y05x0E1STeq4O0S9PEFa9LbpQ==}
 
-  '@libmedia/avutil@0.10.0':
-    resolution: {integrity: sha512-BB1cl5gBY5cKJaVcrFoE+wuMObQk/orCXS0djvWuXfXXYwlFsfaO5jWZHTTCb41qkKBY+6o1nGtra9aq75YMrQ==}
+  '@libmedia/avutil@0.11.0':
+    resolution: {integrity: sha512-MqMT29q0kuXcUg0xXZl/d0b/TDSReDNCbVQz/wNUDo/ssSvK27bDhV1xKUOokTX+6NjGCJNDyQLnTz91wPOwfA==}
 
-  '@libmedia/cheap@0.10.0':
-    resolution: {integrity: sha512-H2cSIjIEKuSHYr9YvZzm+2wuDFpLBMe5DE9oDAjo/YgUIzEuQfyItfT6fQHgMUpcyYk+Yr60EvRP4UP67T3XDQ==}
+  '@libmedia/cheap@0.11.0':
+    resolution: {integrity: sha512-YPgr3jwonVp8+iy6k0rj4lCwWwNnI/Du9v0ks0HQGhyG19mzjtV/dyMQM5ce+lH/3RWwU4ozkBrxjwr0ElQpkQ==}
 
-  '@libmedia/common@1.5.1':
-    resolution: {integrity: sha512-Ui8rcUE+5+SE0atBnE2LJ8PyW8hWAT8THjkI2KsxCb8md2oKxjsQpztQpNCkwpM1dsOesL2Aex8MFRRX6Ncocg==}
-
-  '@nodelib/fs.scandir@2.1.5':
-    resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
-    engines: {node: '>= 8'}
-
-  '@nodelib/fs.stat@2.0.5':
-    resolution: {integrity: sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==}
-    engines: {node: '>= 8'}
-
-  '@nodelib/fs.walk@1.2.8':
-    resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
-    engines: {node: '>= 8'}
+  '@libmedia/common@1.5.2':
+    resolution: {integrity: sha512-NouvXAUtnN26cc9RiPzpV7OWKMC6Pju6aSvaBTtv0zKQfKRA3UVilCCJoVKB18/aeZZg0Kv3IYD+1zK7DsHttQ==}
 
   '@swc/core-darwin-arm64@1.13.5':
     resolution: {integrity: sha512-lKNv7SujeXvKn16gvQqUQI5DdyY8v7xcoO3k06/FJbHJS90zEwZdQiMNRiqpYw/orU543tPaWgz7cIYWhbopiQ==}
@@ -1008,19 +993,12 @@ packages:
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
 
-  fast-glob@3.3.3:
-    resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
-    engines: {node: '>=8.6.0'}
-
   fast-uri@3.1.0:
     resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
 
   fastest-levenshtein@1.0.16:
     resolution: {integrity: sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==}
     engines: {node: '>= 4.9.1'}
-
-  fastq@1.19.1:
-    resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -1044,10 +1022,6 @@ packages:
   gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
-
-  glob-parent@5.1.2:
-    resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
-    engines: {node: '>= 6'}
 
   glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
@@ -1078,14 +1052,6 @@ packages:
   is-core-module@2.16.1:
     resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
     engines: {node: '>= 0.4'}
-
-  is-extglob@2.1.1:
-    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
-    engines: {node: '>=0.10.0'}
-
-  is-glob@4.0.3:
-    resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
-    engines: {node: '>=0.10.0'}
 
   is-number@7.0.0:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
@@ -1157,10 +1123,6 @@ packages:
 
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
-
-  merge2@1.4.1:
-    resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
-    engines: {node: '>= 8'}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -1234,9 +1196,6 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  queue-microtask@1.2.3:
-    resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
 
@@ -1278,13 +1237,6 @@ packages:
     resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
     engines: {node: '>= 0.4'}
     hasBin: true
-
-  reusify@1.1.0:
-    resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
-    engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
-
-  run-parallel@1.2.0:
-    resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
@@ -2199,57 +2151,45 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@libmedia/avcodec@0.10.0':
+  '@libmedia/avcodec@0.11.0':
     dependencies:
-      '@libmedia/avformat': 0.10.0
-      '@libmedia/avutil': 0.10.0
-      '@libmedia/cheap': 0.10.0
-      '@libmedia/common': 1.5.1
+      '@libmedia/avformat': 0.11.0
+      '@libmedia/avutil': 0.11.0
+      '@libmedia/cheap': 0.11.0
+      '@libmedia/common': 1.5.2
 
-  '@libmedia/avformat@0.10.0':
+  '@libmedia/avformat@0.11.0':
     dependencies:
-      '@libmedia/avcodec': 0.10.0
-      '@libmedia/avprotocol': 0.10.0
-      '@libmedia/avutil': 0.10.0
-      '@libmedia/cheap': 0.10.0
-      '@libmedia/common': 1.5.1
+      '@libmedia/avcodec': 0.11.0
+      '@libmedia/avprotocol': 0.11.0
+      '@libmedia/avutil': 0.11.0
+      '@libmedia/cheap': 0.11.0
+      '@libmedia/common': 1.5.2
 
-  '@libmedia/avnetwork@0.10.0':
+  '@libmedia/avnetwork@0.11.0':
     dependencies:
-      '@libmedia/avformat': 0.10.0
-      '@libmedia/avprotocol': 0.10.0
-      '@libmedia/avutil': 0.10.0
-      '@libmedia/cheap': 0.10.0
-      '@libmedia/common': 1.5.1
+      '@libmedia/avformat': 0.11.0
+      '@libmedia/avprotocol': 0.11.0
+      '@libmedia/avutil': 0.11.0
+      '@libmedia/cheap': 0.11.0
+      '@libmedia/common': 1.5.2
 
-  '@libmedia/avprotocol@0.10.0':
+  '@libmedia/avprotocol@0.11.0':
     dependencies:
-      '@libmedia/avutil': 0.10.0
-      '@libmedia/cheap': 0.10.0
-      '@libmedia/common': 1.5.1
+      '@libmedia/avutil': 0.11.0
+      '@libmedia/cheap': 0.11.0
+      '@libmedia/common': 1.5.2
 
-  '@libmedia/avutil@0.10.0':
+  '@libmedia/avutil@0.11.0':
     dependencies:
-      '@libmedia/cheap': 0.10.0
-      '@libmedia/common': 1.5.1
+      '@libmedia/cheap': 0.11.0
+      '@libmedia/common': 1.5.2
 
-  '@libmedia/cheap@0.10.0':
+  '@libmedia/cheap@0.11.0':
     dependencies:
-      '@libmedia/common': 1.5.1
+      '@libmedia/common': 1.5.2
 
-  '@libmedia/common@1.5.1': {}
-
-  '@nodelib/fs.scandir@2.1.5':
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      run-parallel: 1.2.0
-
-  '@nodelib/fs.stat@2.0.5': {}
-
-  '@nodelib/fs.walk@1.2.8':
-    dependencies:
-      '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.19.1
+  '@libmedia/common@1.5.2': {}
 
   '@swc/core-darwin-arm64@1.13.5':
     optional: true
@@ -2620,21 +2560,9 @@ snapshots:
 
   fast-deep-equal@3.1.3: {}
 
-  fast-glob@3.3.3:
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.8
-
   fast-uri@3.1.0: {}
 
   fastest-levenshtein@1.0.16: {}
-
-  fastq@1.19.1:
-    dependencies:
-      reusify: 1.1.0
 
   fill-range@7.1.1:
     dependencies:
@@ -2655,10 +2583,6 @@ snapshots:
   function-bind@1.1.2: {}
 
   gensync@1.0.0-beta.2: {}
-
-  glob-parent@5.1.2:
-    dependencies:
-      is-glob: 4.0.3
 
   glob-to-regexp@0.4.1: {}
 
@@ -2682,12 +2606,6 @@ snapshots:
   is-core-module@2.16.1:
     dependencies:
       hasown: 2.0.2
-
-  is-extglob@2.1.1: {}
-
-  is-glob@4.0.3:
-    dependencies:
-      is-extglob: 2.1.1
 
   is-number@7.0.0: {}
 
@@ -2740,8 +2658,6 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.5
 
   merge-stream@2.0.0: {}
-
-  merge2@1.4.1: {}
 
   micromatch@4.0.8:
     dependencies:
@@ -2800,8 +2716,6 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  queue-microtask@1.2.3: {}
-
   randombytes@2.1.0:
     dependencies:
       safe-buffer: 5.2.1
@@ -2844,12 +2758,6 @@ snapshots:
       is-core-module: 2.16.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
-
-  reusify@1.1.0: {}
-
-  run-parallel@1.2.0:
-    dependencies:
-      queue-microtask: 1.2.3
 
   safe-buffer@5.2.1: {}
 

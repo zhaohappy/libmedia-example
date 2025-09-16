@@ -5,12 +5,12 @@
     "build": "webpack --progress"
   },
   "dependencies": {
-    "@libmedia/avcodec": "0.10.0",
-    "@libmedia/avformat": "0.10.0",
-    "@libmedia/avnetwork": "0.10.0",
-    "@libmedia/avutil": "0.10.0",
-    "@libmedia/cheap": "0.10.0",
-    "@libmedia/common": "1.5.1",
+    "@libmedia/avcodec": "0.11.0",
+    "@libmedia/avformat": "0.11.0",
+    "@libmedia/avnetwork": "0.11.0",
+    "@libmedia/avutil": "0.11.0",
+    "@libmedia/cheap": "~0.11.0",
+    "@libmedia/common": "~1.5.2",
     "vue": "^3.5.18"
   },
   "devDependencies": {
