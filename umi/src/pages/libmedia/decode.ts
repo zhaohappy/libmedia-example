@@ -1,23 +1,25 @@
-import * as demux from '@libmedia/avformat/demux'
-import { createAVIFormatContext } from '@libmedia/avformat/AVFormatContext'
-import { createAVPacket, destroyAVPacket } from '@libmedia/avutil/util/avpacket'
-import { AVMediaType } from '@libmedia/avutil/codec'
-import compileResource from '@libmedia/avutil/function/compileResource'
-import WasmVideoDecoder from '@libmedia/avcodec/wasmcodec/VideoDecoder'
-import Sleep from '@libmedia/common/timer/Sleep'
-import { destroyAVFrame } from '@libmedia/avutil/util/avframe'
+import { demux, createAVIFormatContext } from '@libmedia/avformat'
+import {
+  createAVPacket,
+  destroyAVPacket,
+  AVMediaType,
+  compileResource,
+  destroyAVFrame
+} from '@libmedia/avutil'
+import { WasmVideoDecoder } from '@libmedia/avcodec'
+import { Sleep } from '@libmedia/common/timer'
 
-import { getIOReader, getAVFormat, getWasm } from './utils'
+import { getIOReader, getAVFormat, getWasm, getAccept } from './utils'
 
 let stop_ = true
 
 export async function decode(log: (v: string) => void,  file: File) {
 
-  if (!stop) {
+  if (!stop_) {
     return
   }
 
-  const iformatContext = createAVIFormatContext()
+   const iformatContext = createAVIFormatContext()
 
   const ioReader = await getIOReader(file)
 
@@ -29,7 +31,7 @@ export async function decode(log: (v: string) => void,  file: File) {
   const avpacket = createAVPacket()
 
   await demux.open(iformatContext)
-  await demux.analyzeStreams(iformatContext)
+  await demux.analyzeStreams(iformatContext) 
 
   const stream = iformatContext.getStreamByMediaType(AVMediaType.AVMEDIA_TYPE_VIDEO)
 

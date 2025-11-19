@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@libmedia/avcodec": "0.11.0",
-    "@libmedia/avformat": "0.11.0",
-    "@libmedia/avnetwork": "0.11.0",
-    "@libmedia/avutil": "0.11.0",
-    "@libmedia/cheap": "~0.11.0",
-    "@libmedia/common": "~1.5.2",
+    "@libmedia/avcodec": "1.0.1",
+    "@libmedia/avformat": "1.0.1",
+    "@libmedia/avnetwork": "1.0.1",
+    "@libmedia/avutil": "1.0.1",
+    "@libmedia/cheap": "~1.0.1",
+    "@libmedia/common": "~2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,7 +23,7 @@
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
-    "@libmedia/rollup-plugin-typescript": "^12.2.2",
+    "@libmedia/rollup-plugin-typescript": "^12.2.3",
     "typescript": "^5.6.3",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.1",

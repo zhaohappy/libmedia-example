@@ -1,46 +1,86 @@
-import { AVCodecID } from '@libmedia/avutil/codec'
-import IOReader from '@libmedia/common/io/IOReader'
-import { base64ToUint8Array } from '@libmedia/common/util/base64'
-import FetchIOloader from '@libmedia/avnetwork/ioLoader/FetchIOLoader'
-import FileIOLoader from '@libmedia/avnetwork/ioLoader/FileIOLoader'
-import HlsIOLoader from '@libmedia/avnetwork/ioLoader/HlsIOLoader'
-import DashIOLoader from '@libmedia/avnetwork/ioLoader/DashIOLoader'
-import IOLoader from '@libmedia/avnetwork/ioLoader/IOLoader'
-import * as is from '@libmedia/common/util/is'
-import * as url from '@libmedia/common/util/url'
+import {
+  AVCodecID,
+  analyzeAVFormat,
+  AVFormat,
+  IOFlags
+} from '@libmedia/avutil'
+import {
+  FetchIOLoader,
+  FileIOLoader,
+  type IOLoader
+} from '@libmedia/avnetwork'
 
-import IMovFormat from '@libmedia/avformat/formats/IMovFormat'
-import IFlvFormat from '@libmedia/avformat/formats/IFlvFormat'
-import IAacFormat from '@libmedia/avformat/formats/IAacFormat'
-import IFlacFormat from '@libmedia/avformat/formats/IFlacFormat'
-import IMatroskaFormat from '@libmedia/avformat/formats/IMatroskaFormat'
-import IMp3Format from '@libmedia/avformat/formats/IMp3Format'
-import IMpegpsFormat from '@libmedia/avformat/formats/IMpegpsFormat'
-import IMpegtsFormat from '@libmedia/avformat/formats/IMpegtsFormat'
-import IOggFormat from '@libmedia/avformat/formats/IOggFormat'
-import IIvfFormat from '@libmedia/avformat/formats/IIvfFormat'
-import IWavFormat from '@libmedia/avformat/formats/IWavFormat'
-import IH264Format from '@libmedia/avformat/formats/IH264Format'
-import IHevcFormat from '@libmedia/avformat/formats/IVvcFormat'
-import IVvcFormat from '@libmedia/avformat/formats/IVvcFormat'
-import analyzeAVFormat from '@libmedia/avutil/function/analyzeAVFormat'
-import IFormat from '@libmedia/avformat/formats/IFormat'
-import { AVFormat, IOFlags } from '@libmedia/avutil/avformat'
-import { Ext2Format } from '@libmedia/avutil/stringEnum'
+import HlsIOLoader from '@libmedia/avnetwork/HlsIOLoader'
+import DashIOLoader from '@libmedia/avnetwork/DashIOLoader'
+
+import { type IFormat } from '@libmedia/avformat'
+import { base64, is, url } from '@libmedia/common'
+import { IOReader } from '@libmedia/common/io'
+
+import IIsobmffFormat from '@libmedia/avformat/IIsobmffFormat'
+import IFlvFormat from '@libmedia/avformat/IFlvFormat'
+import IAacFormat from '@libmedia/avformat/IAacFormat'
+import IFlacFormat from '@libmedia/avformat/IFlacFormat'
+import IMatroskaFormat from '@libmedia/avformat/IMatroskaFormat'
+import IMp3Format from '@libmedia/avformat/IMp3Format'
+import IMpegpsFormat from '@libmedia/avformat/IMpegpsFormat'
+import IMpegtsFormat from '@libmedia/avformat/IMpegtsFormat'
+import IOggFormat from '@libmedia/avformat/IOggFormat'
+import IIvfFormat from '@libmedia/avformat/IIvfFormat'
+import IWavFormat from '@libmedia/avformat/IWavFormat'
+import IH264Format from '@libmedia/avformat/IH264Format'
+import IHevcFormat from '@libmedia/avformat/IHevcFormat'
+import IVvcFormat from '@libmedia/avformat/IVvcFormat'
 
 const BASE_URL = 'https://zhaohappy.github.io/libmedia'
 const BASE_CDN = 'https://cdn.jsdelivr.net/gh/zhaohappy/libmedia@latest/dist'
 
+const Ext2Format: Record<string, AVFormat> = {
+  'flv': AVFormat.FLV,
+  'mp4': AVFormat.MP4,
+  'm4s': AVFormat.MP4,
+  'mov': AVFormat.MOV,
+  'ts': AVFormat.MPEGTS,
+  'mts': AVFormat.MPEGTS,
+  'm2ts': AVFormat.MPEGTS,
+  'ivf': AVFormat.IVF,
+  'opus': AVFormat.OGG,
+  'oggs': AVFormat.OGG,
+  'ogg': AVFormat.OGG,
+  'm3u8': AVFormat.MPEGTS,
+  'm3u': AVFormat.MPEGTS,
+  'mpd': AVFormat.MP4,
+  'mp3': AVFormat.MP3,
+  'mkv': AVFormat.MATROSKA,
+  'mka': AVFormat.MATROSKA,
+  'webm': AVFormat.WEBM,
+  'aac': AVFormat.AAC,
+  'flac': AVFormat.FLAC,
+  'wav': AVFormat.WAV,
+  'h264': AVFormat.H264,
+  '264': AVFormat.H264,
+  'avc': AVFormat.H264,
+  'h265': AVFormat.HEVC,
+  '265': AVFormat.HEVC,
+  'hevc': AVFormat.HEVC,
+  'h266': AVFormat.VVC,
+  '266': AVFormat.VVC,
+  'vvc': AVFormat.VVC,
+  'mpeg': AVFormat.MPEGPS,
+  'mpg': AVFormat.MPEGPS,
+  'avi': AVFormat.AVI
+}
+
 export function formatUrl(
   url: string,
 ): string {
-  const base = (BASE_URL + '/docs');
-  const prefix = '/libmedia/docs/'
+  const base =(BASE_URL + '/docs')
+  const prefix =  '/libmedia/docs/'
   return `${base}${prefix}${url}`
 }
 
-let supportAtomic = WebAssembly.validate(base64ToUint8Array('AGFzbQEAAAABBgFgAX8BfwISAQNlbnYGbWVtb3J5AgMBgIACAwIBAAcJAQVsb2FkOAAACgoBCAAgAP4SAAAL'))
-let supportSimd = WebAssembly.validate(base64ToUint8Array('AGFzbQEAAAABBQFgAAF7AhIBA2VudgZtZW1vcnkCAwGAgAIDAgEACgoBCABBAP0ABAAL'))
+let supportAtomic = WebAssembly.validate(base64.base64ToUint8Array('AGFzbQEAAAABBgFgAX8BfwISAQNlbnYGbWVtb3J5AgMBgIACAwIBAAcJAQVsb2FkOAAACgoBCAAgAP4SAAAL'))
+let supportSimd = WebAssembly.validate(base64.base64ToUint8Array('AGFzbQEAAAABBQFgAAF7AhIBA2VudgZtZW1vcnkCAwGAgAIDAgEACgoBCABBAP0ABAAL'))
 
 export function getWasm(type: 'decoder' | 'encoder' | 'resampler' | 'scaler' | 'stretchpitcher', codecId?: AVCodecID): string {
   switch (type) {
@@ -188,7 +228,7 @@ export async function getIOReader(source: string | File) {
       ioloader = new DashIOLoader()
     }
     else {
-      ioloader = new FetchIOloader()
+      ioloader = new FetchIOLoader()
     }
     await ioloader.open(
       {
@@ -233,7 +273,7 @@ export async function getAVFormat(ioReader: IOReader, source: string | File) {
       iformat = new IFlvFormat()
       break
     case AVFormat.MP4:
-      iformat = new IMovFormat()
+      iformat = new IIsobmffFormat()
       break
     case AVFormat.MPEGTS:
       iformat = new IMpegtsFormat()

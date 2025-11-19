@@ -2,17 +2,19 @@
 
 import { ref } from 'vue'
 
-import * as demux from '@libmedia/avformat/demux'
-import { createAVIFormatContext } from '@libmedia/avformat/AVFormatContext'
-import { createAVPacket, destroyAVPacket } from '@libmedia/avutil/util/avpacket'
-import { AVCodecID, AVMediaType } from '@libmedia/avutil/codec'
-import compileResource from '@libmedia/avutil/function/compileResource'
-import WasmVideoDecoder from '@libmedia/avcodec/wasmcodec/VideoDecoder'
-import Sleep from '@libmedia/common/timer/Sleep'
-import { destroyAVFrame } from '@libmedia/avutil/util/avframe'
+import { demux, createAVIFormatContext } from '@libmedia/avformat'
+import {
+  createAVPacket,
+  destroyAVPacket,
+  AVMediaType,
+  compileResource,
+  destroyAVFrame,
+  AVCodecParameters
+} from '@libmedia/avutil'
+import { WasmVideoDecoder } from '@libmedia/avcodec'
+import { Sleep } from '@libmedia/common/timer'
 
 import { getIOReader, getAVFormat, getWasm, getAccept } from './libmedia/utils'
-import AVCodecParameters from '@libmedia/avutil/struct/avcodecparameters'
 
 let stop_ = true
 

@@ -6,12 +6,12 @@
     "dev": "node build.js --serve"
   },
   "dependencies": {
-    "@libmedia/avcodec": "0.11.0",
-    "@libmedia/avformat": "0.11.0",
-    "@libmedia/avnetwork": "0.11.0",
-    "@libmedia/avutil": "0.11.0",
-    "@libmedia/cheap": "~0.11.0",
-    "@libmedia/common": "~1.5.2"
+    "@libmedia/avcodec": "1.0.1",
+    "@libmedia/avformat": "1.0.1",
+    "@libmedia/avnetwork": "1.0.1",
+    "@libmedia/avutil": "1.0.1",
+    "@libmedia/cheap": "~1.0.1",
+    "@libmedia/common": "~2.0.1"
   },
   "devDependencies": {
     "@libmedia/esbuild-plugin-typescript": "^12.2.1",

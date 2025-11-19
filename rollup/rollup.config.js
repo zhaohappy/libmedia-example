@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url'
 import esbuild from 'rollup-plugin-esbuild'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
-import transformer from '@libmedia/cheap/build/transformer'
+import * as transformer from '@libmedia/cheap/build/transformer'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -17,7 +17,10 @@ export default {
     sourcemap: true
   },
   plugins: [
-    resolve(),
+    resolve({
+      browser: true,
+      preferBuiltins: false
+    }),
     // 此 loader 处理需要使用 cheap 编译的 ts
     // 如果下面对 ts 的处理使用的也是 @rollup/plugin-typescript，两个直接合并为一个
     typescript({

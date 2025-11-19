@@ -15,8 +15,5 @@
       "node"
     ]
   },
-  "include": ["src"],
-  "files": [
-    "node_modules/@libmedia/cheap/dist/cjs/cheapdef.d.ts"
-  ]
+  "include": ["src"]
 }

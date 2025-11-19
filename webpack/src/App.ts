@@ -1,13 +1,15 @@
-import * as demux from '@libmedia/avformat/demux'
-import { createAVIFormatContext } from '@libmedia/avformat/AVFormatContext'
-import { createAVPacket, destroyAVPacket } from '@libmedia/avutil/util/avpacket'
-import { AVMediaType } from '@libmedia/avutil/codec'
-import compileResource from '@libmedia/avutil/function/compileResource'
-import WasmVideoDecoder from '@libmedia/avcodec/wasmcodec/VideoDecoder'
-import Sleep from '@libmedia/common/timer/Sleep'
-import { destroyAVFrame } from '@libmedia/avutil/util/avframe'
+import { demux, createAVIFormatContext } from '@libmedia/avformat'
+import {
+  createAVPacket,
+  destroyAVPacket,
+  AVMediaType,
+  compileResource,
+  destroyAVFrame
+} from '@libmedia/avutil'
+import { WasmVideoDecoder } from '@libmedia/avcodec'
+import { Sleep } from '@libmedia/common/timer'
 
-import { formatUrl, getIOReader, getAVFormat, getAccept, getWasm } from './utils'
+import { getIOReader, getAVFormat, getWasm, getAccept } from './utils'
 import { hello } from './hello'
 
 let file: File
@@ -22,9 +24,9 @@ async function decode(log: (v: string) => void) {
 
   const iformatContext = createAVIFormatContext()
 
-  const ioReader = await getIOReader(file || formatUrl('video/test.mp4'))
+  const ioReader = await getIOReader(file)
 
-  const iformat = await getAVFormat(ioReader, file || formatUrl('video/test.mp4'))
+  const iformat = await getAVFormat(ioReader, file)
 
   iformatContext.ioReader = ioReader
   iformatContext.iformat = iformat
@@ -32,7 +34,7 @@ async function decode(log: (v: string) => void) {
   const avpacket = createAVPacket()
 
   await demux.open(iformatContext)
-  await demux.analyzeStreams(iformatContext)
+  await demux.analyzeStreams(iformatContext) 
 
   const stream = iformatContext.getStreamByMediaType(AVMediaType.AVMEDIA_TYPE_VIDEO)
 
@@ -43,7 +45,6 @@ async function decode(log: (v: string) => void) {
       destroyAVFrame(frame)
     },
   })
-
   const ret = await decoder.open(addressof(stream.codecpar))
   if (ret) {
     log(`open decode error: ${ret}\n`)

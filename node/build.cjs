@@ -5,7 +5,7 @@ const ts = require('typescript')
 const transformer = require('@libmedia/cheap/build/transformer')
 
 // 读取 tsconfig.json 配置，更改为自己的 tsconfig.json 的路径
-const configPath = path.resolve(__dirname, './tsconfig.cheap.json')
+const configPath = path.resolve(__dirname, './tsconfig.json')
 const configText = fs.readFileSync(configPath, 'utf8')
 const { config } = ts.parseConfigFileTextToJson(configPath, configText)
 const parsedCommandLine = ts.parseJsonConfigFileContent(

@@ -2,7 +2,6 @@
 import { getAccept } from './libmedia/utils'
 import { useEffect, useRef, useState } from 'react'
 import { stop, decode} from './libmedia/decode'
-import AVCodecParameters from '@libmedia/avutil/struct/avcodecparameters'
 
 export default function HomePage() {
   const [value, setValue] = useState('')
@@ -14,10 +13,6 @@ export default function HomePage() {
       textarea.scrollTop = textarea.scrollHeight
     }
   }
-
-  const codecpar = make<AVCodecParameters>()
-  const p = addressof(codecpar)
-  const l = p.codecId
 
   useEffect(() => {
     scrollToBottom()

@@ -9,23 +9,23 @@ importers:
   .:
     dependencies:
       '@libmedia/avcodec':
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 1.0.1
+        version: 1.0.1
       '@libmedia/avformat':
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 1.0.1
+        version: 1.0.1
       '@libmedia/avnetwork':
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 1.0.1
+        version: 1.0.1
       '@libmedia/avutil':
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 1.0.1
+        version: 1.0.1
       '@libmedia/cheap':
-        specifier: ~0.11.0
-        version: 0.11.0
+        specifier: ~1.0.1
+        version: 1.0.1
       '@libmedia/common':
-        specifier: ~1.5.2
-        version: 1.5.2
+        specifier: ~2.0.1
+        version: 2.0.1
     devDependencies:
       '@libmedia/esbuild-plugin-typescript':
         specifier: ^12.2.1
@@ -201,26 +201,26 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@libmedia/avcodec@0.11.0':
-    resolution: {integrity: sha512-/fF+jHRbqIEq2PZ7wJpvXCmKhrXzv1s7t11IjNhYeJVvy6vmKbFEV2grSt/sVf4UnsAIF3rb0quEI/7L5HbNXg==}
+  '@libmedia/avcodec@1.0.1':
+    resolution: {integrity: sha512-rynATvLdlFQqlSpm9krqIe4J5Ou+0WE1LPtvYwQUiwhxB48LA4+LWUPIrKeKWyTiYGxbUwZc99XuosmVMAGnHw==}
 
-  '@libmedia/avformat@0.11.0':
-    resolution: {integrity: sha512-vKWdwS3KrOVGQkVv3xnzvo8lhbJ3Fjyn8hjHQ2S0uXIAGiU7M1fQOALFi7wObMxddVACIDa/PlStyhIhUCl10Q==}
+  '@libmedia/avformat@1.0.1':
+    resolution: {integrity: sha512-/25DrgpMgIYz+pDOyg0lPKE4Oy3vfV05AMpRBCY0XQ7LzOh+TBk0dW11rB3dkcdl3c3gqR+X7YlSgoGCYvW30Q==}
 
-  '@libmedia/avnetwork@0.11.0':
-    resolution: {integrity: sha512-Bu3eiVTFzRAP55MD7XLWFhv/O2gFQ/jv48usDn6U4ihqfypUuT+fNaQZsrPYevpgHkat+HJXRSc6lswsNUQq3A==}
+  '@libmedia/avnetwork@1.0.1':
+    resolution: {integrity: sha512-9LB2xr3Tmm4YgZXUvl/2kbpuy27gDpOkyqSKMy7Venc5AVcJSooTMfoa7JDeSfWaKq8vq4COeIUA5dwgKaxoRQ==}
 
-  '@libmedia/avprotocol@0.11.0':
-    resolution: {integrity: sha512-bf6cHMT572xVA9uZ+rww/TtyK/4NlV6FBIZDXpexW/6WJkzTwY83oo6zY/PK6y05x0E1STeq4O0S9PEFa9LbpQ==}
+  '@libmedia/avprotocol@1.0.1':
+    resolution: {integrity: sha512-XlJKttGWi5ECdk39T9TA6W1THYUvuTy34QmpHngBl9XuN4ZdZLIjZKtT0ltQArg9ydRODk3YlhPoxgaqQ/IDzw==}
 
-  '@libmedia/avutil@0.11.0':
-    resolution: {integrity: sha512-MqMT29q0kuXcUg0xXZl/d0b/TDSReDNCbVQz/wNUDo/ssSvK27bDhV1xKUOokTX+6NjGCJNDyQLnTz91wPOwfA==}
+  '@libmedia/avutil@1.0.1':
+    resolution: {integrity: sha512-nzQxvSkoHNnzGUKIHHV6Dkpyw+wj0sCVjdPCFxrMMCw0It/rGVAY63+fm+NvWYyepcrF2ZpJkE+G3qc1CzE0Qw==}
 
-  '@libmedia/cheap@0.11.0':
-    resolution: {integrity: sha512-YPgr3jwonVp8+iy6k0rj4lCwWwNnI/Du9v0ks0HQGhyG19mzjtV/dyMQM5ce+lH/3RWwU4ozkBrxjwr0ElQpkQ==}
+  '@libmedia/cheap@1.0.1':
+    resolution: {integrity: sha512-7EDmfZmoMBZYoGID6pCnFevkr2MOII04dxKWy0PRm0xElhfZjcVrnBv41KsGfLSlwyUNSlLy0BZ3WEVrtu15tg==}
 
-  '@libmedia/common@1.5.2':
-    resolution: {integrity: sha512-NouvXAUtnN26cc9RiPzpV7OWKMC6Pju6aSvaBTtv0zKQfKRA3UVilCCJoVKB18/aeZZg0Kv3IYD+1zK7DsHttQ==}
+  '@libmedia/common@2.0.1':
+    resolution: {integrity: sha512-tIg23gxcjbQ0bvU1YMTS2FaG1q1kLg7CTGhp/8/W/X+u+vx7WLx+HvDvVnMkJnrBasHd9BfvL0pot7RS1IT+Cg==}
 
   '@libmedia/esbuild-plugin-typescript@12.2.1':
     resolution: {integrity: sha512-T0XTjItXMtS7cSrZLsmlJ/5bYml9pKqgM6P/ml+UjHuhrgj3vFBrbjw7Exjo+1okYT4hN5CEGztcSt+G67TlhQ==}
@@ -258,6 +258,10 @@ packages:
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   del-cli@6.0.0:
     resolution: {integrity: sha512-9nitGV2W6KLFyya4qYt4+9AKQFL+c0Ehj5K7V7IwlxTc6RMCfQUGY9E9pLG6e8TQjtwXpuiWIGGZb3mfVxyZkw==}
@@ -480,45 +484,46 @@ snapshots:
   '@esbuild/win32-x64@0.25.9':
     optional: true
 
-  '@libmedia/avcodec@0.11.0':
+  '@libmedia/avcodec@1.0.1':
     dependencies:
-      '@libmedia/avformat': 0.11.0
-      '@libmedia/avutil': 0.11.0
-      '@libmedia/cheap': 0.11.0
-      '@libmedia/common': 1.5.2
+      '@libmedia/avformat': 1.0.1
+      '@libmedia/avutil': 1.0.1
+      '@libmedia/cheap': 1.0.1
+      '@libmedia/common': 2.0.1
 
-  '@libmedia/avformat@0.11.0':
+  '@libmedia/avformat@1.0.1':
     dependencies:
-      '@libmedia/avcodec': 0.11.0
-      '@libmedia/avprotocol': 0.11.0
-      '@libmedia/avutil': 0.11.0
-      '@libmedia/cheap': 0.11.0
-      '@libmedia/common': 1.5.2
+      '@libmedia/avcodec': 1.0.1
+      '@libmedia/avprotocol': 1.0.1
+      '@libmedia/avutil': 1.0.1
+      '@libmedia/cheap': 1.0.1
+      '@libmedia/common': 2.0.1
 
-  '@libmedia/avnetwork@0.11.0':
+  '@libmedia/avnetwork@1.0.1':
     dependencies:
-      '@libmedia/avformat': 0.11.0
-      '@libmedia/avprotocol': 0.11.0
-      '@libmedia/avutil': 0.11.0
-      '@libmedia/cheap': 0.11.0
-      '@libmedia/common': 1.5.2
+      '@libmedia/avformat': 1.0.1
+      '@libmedia/avprotocol': 1.0.1
+      '@libmedia/avutil': 1.0.1
+      '@libmedia/cheap': 1.0.1
+      '@libmedia/common': 2.0.1
 
-  '@libmedia/avprotocol@0.11.0':
+  '@libmedia/avprotocol@1.0.1':
     dependencies:
-      '@libmedia/avutil': 0.11.0
-      '@libmedia/cheap': 0.11.0
-      '@libmedia/common': 1.5.2
+      '@libmedia/avutil': 1.0.1
+      '@libmedia/cheap': 1.0.1
+      '@libmedia/common': 2.0.1
 
-  '@libmedia/avutil@0.11.0':
+  '@libmedia/avutil@1.0.1':
     dependencies:
-      '@libmedia/cheap': 0.11.0
-      '@libmedia/common': 1.5.2
+      '@libmedia/cheap': 1.0.1
+      '@libmedia/common': 2.0.1
 
-  '@libmedia/cheap@0.11.0':
+  '@libmedia/cheap@1.0.1':
     dependencies:
-      '@libmedia/common': 1.5.2
+      '@libmedia/common': 2.0.1
+      commander: 13.1.0
 
-  '@libmedia/common@1.5.2': {}
+  '@libmedia/common@2.0.1': {}
 
   '@libmedia/esbuild-plugin-typescript@12.2.1(esbuild@0.25.9)(tslib@2.8.1)(typescript@5.9.2)':
     dependencies:
@@ -551,6 +556,8 @@ snapshots:
   braces@3.0.3:
     dependencies:
       fill-range: 7.1.1
+
+  commander@13.1.0: {}
 
   del-cli@6.0.0:
     dependencies:

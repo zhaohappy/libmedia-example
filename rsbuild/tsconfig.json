@@ -21,8 +21,5 @@
     "noUnusedParameters": true,
     "baseUrl": "./"
   },
-  "include": ["src"],
-  "files": [
-    "node_modules/@libmedia/cheap/dist/esm/cheapdef.d.ts"
-  ]
+  "include": ["src"]
 }

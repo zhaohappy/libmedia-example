@@ -3,7 +3,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import * as esbuild from 'esbuild'
 import typescript from '@libmedia/esbuild-plugin-typescript'
-import transformer from '@libmedia/cheap/build/transformer'
+import * as transformer from '@libmedia/cheap/build/transformer'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)

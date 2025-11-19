@@ -1,7 +1,7 @@
 import { defineConfig } from '@rsbuild/core';
 import path from 'path'
 import ts from 'typescript'
-import transformer from '@libmedia/cheap/build/transformer';
+import * as transformer from '@libmedia/cheap/build/transformer';
 
 const configPath = ts.findConfigFile('./', ts.sys.fileExists, 'tsconfig.cheap.json')
 const configFile = ts.readConfigFile(configPath!, ts.sys.readFile)
@@ -24,7 +24,7 @@ export default defineConfig({
             loader: 'ts-loader',
             options: {
               configFile: path.resolve(__dirname, './tsconfig.cheap.json'),
-              getCustomTransformers: function(program, getProgram) {
+              getCustomTransformers: function(program: any, getProgram: any) {
                 return {
                   before: [transformer.before(program, getProgram)]
                 }

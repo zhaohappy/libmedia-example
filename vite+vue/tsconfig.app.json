@@ -5,11 +5,8 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
     "verbatimModuleSyntax": false
-  },
-  "files": [
-    "./node_modules/@libmedia/cheap/dist/esm/cheapdef.d.ts"
-  ]
+  }
 }
