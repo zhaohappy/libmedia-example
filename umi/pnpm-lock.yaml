@@ -21,8 +21,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       '@libmedia/cheap':
-        specifier: ~1.0.1
-        version: 1.0.1
+        specifier: ~1.0.2
+        version: 1.0.2
       '@libmedia/common':
         specifier: ~2.0.1
         version: 2.0.1
@@ -712,8 +712,8 @@ packages:
   '@libmedia/avutil@1.0.1':
     resolution: {integrity: sha512-nzQxvSkoHNnzGUKIHHV6Dkpyw+wj0sCVjdPCFxrMMCw0It/rGVAY63+fm+NvWYyepcrF2ZpJkE+G3qc1CzE0Qw==}
 
-  '@libmedia/cheap@1.0.1':
-    resolution: {integrity: sha512-7EDmfZmoMBZYoGID6pCnFevkr2MOII04dxKWy0PRm0xElhfZjcVrnBv41KsGfLSlwyUNSlLy0BZ3WEVrtu15tg==}
+  '@libmedia/cheap@1.0.2':
+    resolution: {integrity: sha512-+/cKOnL5+N+7N5aJZZP02byiKbBjtE2a53sWl1oeW6QvreESi6KVE3HLkor/dDgiIR1XbW9I6sJKpLH9pPDvew==}
 
   '@libmedia/common@2.0.1':
     resolution: {integrity: sha512-tIg23gxcjbQ0bvU1YMTS2FaG1q1kLg7CTGhp/8/W/X+u+vx7WLx+HvDvVnMkJnrBasHd9BfvL0pot7RS1IT+Cg==}
@@ -5466,7 +5466,7 @@ snapshots:
     dependencies:
       '@libmedia/avformat': 1.0.1
       '@libmedia/avutil': 1.0.1
-      '@libmedia/cheap': 1.0.1
+      '@libmedia/cheap': 1.0.2
       '@libmedia/common': 2.0.1
 
   '@libmedia/avformat@1.0.1':
@@ -5474,7 +5474,7 @@ snapshots:
       '@libmedia/avcodec': 1.0.1
       '@libmedia/avprotocol': 1.0.1
       '@libmedia/avutil': 1.0.1
-      '@libmedia/cheap': 1.0.1
+      '@libmedia/cheap': 1.0.2
       '@libmedia/common': 2.0.1
 
   '@libmedia/avnetwork@1.0.1':
@@ -5482,21 +5482,21 @@ snapshots:
       '@libmedia/avformat': 1.0.1
       '@libmedia/avprotocol': 1.0.1
       '@libmedia/avutil': 1.0.1
-      '@libmedia/cheap': 1.0.1
+      '@libmedia/cheap': 1.0.2
       '@libmedia/common': 2.0.1
 
   '@libmedia/avprotocol@1.0.1':
     dependencies:
       '@libmedia/avutil': 1.0.1
-      '@libmedia/cheap': 1.0.1
+      '@libmedia/cheap': 1.0.2
       '@libmedia/common': 2.0.1
 
   '@libmedia/avutil@1.0.1':
     dependencies:
-      '@libmedia/cheap': 1.0.1
+      '@libmedia/cheap': 1.0.2
       '@libmedia/common': 2.0.1
 
-  '@libmedia/cheap@1.0.1':
+  '@libmedia/cheap@1.0.2':
     dependencies:
       '@libmedia/common': 2.0.1
       commander: 13.1.0

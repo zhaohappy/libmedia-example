@@ -9,7 +9,7 @@ import {
   AVMediaType,
   compileResource,
   destroyAVFrame,
-  type AVCodecParameters
+  AVCodecParameters
 } from '@libmedia/avutil'
 import { WasmVideoDecoder } from '@libmedia/avcodec'
 import { Sleep } from '@libmedia/common/timer'

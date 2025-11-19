@@ -9,7 +9,7 @@
     "@libmedia/avformat": "1.0.1",
     "@libmedia/avnetwork": "1.0.1",
     "@libmedia/avutil": "1.0.1",
-    "@libmedia/cheap": "~1.0.1",
+    "@libmedia/cheap": "~1.0.2",
     "@libmedia/common": "~2.0.1"
   },
   "devDependencies": {
