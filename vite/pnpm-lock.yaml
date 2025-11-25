@@ -34,8 +34,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@libmedia/rollup-plugin-typescript':
-        specifier: ^12.2.3
-        version: 12.2.3(@libmedia/cheap@1.2.0)(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)
+        specifier: ^12.2.4
+        version: 12.2.4(@libmedia/cheap@1.2.0)(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)
       '@types/node':
         specifier: ^22.7.6
         version: 22.18.0
@@ -351,8 +351,8 @@ packages:
   '@libmedia/common@2.2.0':
     resolution: {integrity: sha512-ScNUKvmpfNn4zOZItFY78K0Nnkb404hE5suPLe2x8rVb8/BN1avXfyOudZo23aO518a4ERUK7NrFuadsK5ZxzA==}
 
-  '@libmedia/rollup-plugin-typescript@12.2.3':
-    resolution: {integrity: sha512-e1Oqw7czzRI1se9E8uNWSyNc9OUGcvj3llvPRg8cSC2vkXheCFheseRJD9ufc4M3dQuYfWjxTXMGAmsNXFx2Jg==}
+  '@libmedia/rollup-plugin-typescript@12.2.4':
+    resolution: {integrity: sha512-utVDHvbEz7/2fIgc4+2cwmCJi55aSgEpLGUAMTmYoknZZIiyTF6L7aKeHqwqgsjiuAFJyA2VK8+a1O1FwiXV9A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@libmedia/cheap': '>=0.10.0'
@@ -1371,7 +1371,7 @@ snapshots:
 
   '@libmedia/common@2.2.0': {}
 
-  '@libmedia/rollup-plugin-typescript@12.2.3(@libmedia/cheap@1.2.0)(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)':
+  '@libmedia/rollup-plugin-typescript@12.2.4(@libmedia/cheap@1.2.0)(rollup@4.50.0)(tslib@2.8.1)(typescript@5.9.2)':
     dependencies:
       '@libmedia/cheap': 1.2.0
       '@rollup/pluginutils': 5.2.0(rollup@4.50.0)
