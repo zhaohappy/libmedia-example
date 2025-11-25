@@ -15,12 +15,12 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@libmedia/avcodec": "1.0.1",
-    "@libmedia/avformat": "1.0.1",
-    "@libmedia/avnetwork": "1.0.1",
-    "@libmedia/avutil": "1.0.1",
-    "@libmedia/cheap": "~1.0.2",
-    "@libmedia/common": "~2.0.1",
+    "@libmedia/avcodec": "1.2.0",
+    "@libmedia/avformat": "1.2.0",
+    "@libmedia/avnetwork": "1.2.0",
+    "@libmedia/avutil": "1.2.0",
+    "@libmedia/cheap": "~1.2.0",
+    "@libmedia/common": "~2.2.0",
     "vue": "^3.5.18"
   },
   "devDependencies": {
